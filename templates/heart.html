@@ -1,0 +1,238 @@
+﻿
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+ <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Health For You &mdash; Heart</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+	<!--
+	  //////////////////////////////////////////////////////
+
+	  FREE HTML5 TEMPLATE
+	  DESIGNED & DEVELOPED by FreeHTML5.co
+
+	  Website: 		http://freehtml5.co/
+	  Email: 			info@freehtml5.co
+	  Twitter: 		http://twitter.com/fh5co
+	  Facebook: 		https://www.facebook.com/fh5co
+
+	  //////////////////////////////////////////////////////
+	   -->
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/animate.css')}}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/icommon.css')}}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css')}}">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/flexslider.css')}}">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+	<!-- Modernizr JS -->
+	<script src="{{url_for('static', filename='js/modernizr-2.6.2.min.js')}}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>-->
+	<script src="{{url_for('static', filename='js/respond.min.js')}}"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+
+	<div id="fh5co-page">
+		<header id="fh5co-header" role="banner">
+			<div class="container">
+				<div class="header-inner">
+					<h1><a href="/">Health For You</a></h1>
+					<nav role="navigation">
+						<ul>
+						   <li><a href="/cancer">Cancer</a></li>
+						   <li><a href="/diabetes">Diabetes</a></li>
+						   <li  class="active"><a href="/heart">Heart</a></li>
+						   <li><a href="/kidney1">Kidney</a></li>
+						   <li><a href="/liver">Liver</a></li>
+						   <li><a href="#">Malaria</a></li>
+						   <li><a href="#">Pneumonia</a></li>
+						 <!--<li class="cta"><a href="#">Get started</a></li>-->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+		<aside id="fh5co-hero" class="js-fullheight">
+			<div class="flexslider js-fullheight">
+				<ul class="slides">
+					<li style="background-image: url({{url_for('static', filename='images/slide_3.jpg')}});">
+						<div class="overlay-gradient"></div>
+						<div class="container">
+							<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+								<div class="slider-text-inner">
+
+									<!--<p class="fh5co-lead">Designed with <i class="icon-heart"></i> by the fine folks at <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a></p>-->
+									<form  action = "{{url_for('heart_predict')}}" method = "POST">
+									<div class="form">
+										<div class="title">
+											Heart Failure Detection
+										</div>
+										<div class="inputfield">
+											<label>Age</label>
+											<input type="text" class="input" name="age" placeholder="values between 30 to 80">
+										</div>
+										<div class="inputfield">
+											<label>Gender</label>
+											<input type="text" class="input" name="gender" placeholder="for Male:- 1 and Female:- 0">
+										</div>
+										<div class="inputfield">
+											<label>CP</label>
+											<input type="text" class="input" name="cp" placeholder="chest pain severity (0 or 1 or 2 0r 3)">
+										</div>
+										<div class="inputfield">
+											<label>Trestbps</label>
+											<input type="text" class="input" name="trestbps" placeholder="values between 100 to 200">
+										</div>
+										<div class="inputfield">
+											<label>Chol</label>
+											<input type="text" class="input" name="chol" placeholder="values between 150 to 550">
+										</div>
+										<div class="inputfield">
+											<label>FBS</label>
+											<input type="text" class="input" name="fbs" placeholder="(fasting blood sugar &gt; 120 mg/dl) (1 = true; 0 = false)">
+										</div>
+										<div class="inputfield">
+											<label>Restecg</label>
+											<input type="text" class="input" name="restecg" placeholder="Choose either 0 or 1 or 2">
+										</div>
+										<div class="inputfield">
+											<label>Thalach</label>
+											<input type="text" class="input" name="thalach" placeholder="values between 70 to 200">
+										</div>
+										<div class="inputfield">
+											<label>Oldpeak</label>
+											<input type="text" class="input" name="oldpeak" placeholder="values between 0 to 6">
+										</div>
+										<div class="inputfield">
+											<label>Thal</label>
+											<input type="text" class="input" name="thal" placeholder="choose either 0 or 1 or 2 or 3">
+										</div>
+										<div class="inputfield">
+											<a href="heart_predict.html"> <input type="submit" class="button" value="Predict"></a>
+											<!--<input type="submit" href="cancer_predict.html" value="Predict" class="button">-->
+										</div>
+									</div>
+									</form>
+
+								</div>
+
+							</div>
+
+						</div>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+
+
+		<div class="fh5co-cta" style="background-image: url({{url_for('static', filename='images/slide_1.jpg')}});">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="col-md-12 text-center animate-box">
+					<h3>Health For You Project Files</h3>
+					<p><a href="https://github.com/mvram123/health-for-u" class="btn btn-primary btn-outline with-arrow">Click Here! <i class="icon-arrow-right"></i></a></p>
+				</div>
+			</div>
+		</div>
+
+
+		<footer id="fh5co-footer" role="contentinfo">
+
+			<div class="container">
+				<div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+					<h3>About Us</h3>
+					<p>I am a third year student at Indian Institute of Information Technology Design and Manufacturing Kancheepuram. </p>
+					<p><a href="https://www.linkedin.com/in/ramarao-mv-44b100171/" class="btn btn-primary btn-outline with-arrow btn-sm">Know More<i class="icon-arrow-right"></i></a></p>
+				</div>
+				<div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+					<h3>Our Services</h3>
+					<ul class="float">
+					    <li><a href="/cancer">Cancer Detection</a></li>
+						<li><a href="/diabetes">Diabetes Detection</a></li>
+					    <li><a href="/heart">Heart Failure Detection</a></li>
+					    <li><a href="/kidney1">Kidney Failure Detection</a></li>
+				    </ul>
+				    <ul class="float">
+					    <li><a href="/liver">Liver Failure Detection</a></li>
+					    <li><a href="#">Malaria Detection</a></li>
+					    <li><a href="#">Pneumonia Detection</a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="col-md-2 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+					<h3>Follow Us</h3>
+					<ul class="fh5co-social">
+						<li><a href="https://github.com/mvram123/health-for-u"><i class="icon-twitter"></i></a></li>
+						<li><a href="https://github.com/mvram123/health-for-u"><i class="icon-facebook"></i></a></li>
+						<li><a href="https://github.com/mvram123/health-for-u"><i class="icon-google-plus"></i></a></li>
+						<li><a href="https://github.com/mvram123/health-for-u"><i class="icon-instagram"></i></a></li>
+					</ul>
+				</div>
+
+
+				<div class="col-md-12 fh5co-copyright text-center">
+					<p><span>Designed with <i class="icon-heart"></i> by <a href="https://www.linkedin.com/in/ramarao-mv-44b100171/" target="_blank">M V Ramarao</a> Demo Images by <a href="http://unsplash.com/" target="_blank">Unsplash</a></span></p>
+				</div>
+
+			</div>
+		</footer>
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+	<!-- jQuery Easing -->
+	<script src="{{url_for('static', filename='js/jquery.easing.1.3.js')}}"></script>
+	<!-- Bootstrap -->
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<!-- Waypoints -->
+	<script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+	<!-- Flexslider -->
+	<script src="{{url_for('static', filename='js/jquery.flexslider-min.js')}}"></script>
+	<!-- Stellar -->
+	<script src="{{url_for('static', filename='js/jquery.stellar.min.js')}}"></script>
+
+	<!-- MAIN JS -->
+	<script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+</body>
+</html>
