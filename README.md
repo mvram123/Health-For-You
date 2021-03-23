@@ -51,8 +51,7 @@ In this project, I present a website in which the following applications are imp
 
 ## Contact 
 
-If you have any doubt or want to contribute feel free to email me or hit me up on linkedin
-linkedin url :- https://www.linkedin.com/in/ramarao-mv-44b100171/
+If you have any doubt or want to contribute feel free to email me or hit me up on linkedin :- https://www.linkedin.com/in/ramarao-mv-44b100171/
 
 
 
