@@ -27,7 +27,33 @@ In this project, I present a website in which the following applications are imp
 - kidney.csv :- Cat Boost
 - liver.csv :- Random Forest
 
-## Demo 
+## Project Snippets
+
+### Cancer
+![alt text](https://github.com/mvram123/health-for-u/blob/main/readme_resources/cancer.png)
+### Diabetes
+![alt text](https://github.com/mvram123/health-for-u/blob/main/readme_resources/diabetes.png)
+### Heart
+![alt text](https://github.com/mvram123/health-for-u/blob/main/readme_resources/heart.png)
+### Kidney
+![alt text](https://github.com/mvram123/health-for-u/blob/main/readme_resources/kidney.png)
+### Liver
+![alt text](https://github.com/mvram123/health-for-u/blob/main/readme_resources/liver.png)
+
+
+
+## Further Developments
+
+- Frontend can be made more nicer
+- More data can be collected from different resources.
+- Feature engineering part need to be devolped.
+- Neural networks and other machine learning algorithms can be used to figure out the best model. 
+
+## Contact 
+
+If you have any doubt or want to contribute feel free to email me or hit me up on linkedin
+linkedin url :- https://www.linkedin.com/in/ramarao-mv-44b100171/
+
 
 
 
